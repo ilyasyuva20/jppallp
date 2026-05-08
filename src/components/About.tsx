@@ -23,7 +23,7 @@ export default function About() {
           className="flex-1 space-y-8"
         >
           <div className="inline-block px-4 py-1 rounded-full glass text-sm font-semibold text-blue-400">
-            About JPPP Consultants
+            About JPPA Consultants LLP
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
             Driving <span className="text-blue-500">Profitability</span> & Sustainable Growth.

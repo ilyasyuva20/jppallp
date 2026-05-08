@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         <div className="space-y-6">
           <div className="text-2xl font-bold tracking-tighter text-white">
-            JPPP <span className="text-blue-500">Consultants</span>
+            JPPA <span className="text-blue-500">Consultants LLP</span>
           </div>
           <p className="text-white/40 leading-relaxed">
             Leading business consulting firm specializing in Virtual CFO services, financial modeling, and operational excellence.
@@ -39,7 +39,7 @@ export default function Footer() {
           <div className="space-y-4 text-white/40">
             <div className="flex items-start gap-3">
               <Mail size={18} className="text-blue-500 mt-1 shrink-0" />
-              <span>info@jpppconsultants.com</span>
+              <span>info@jppaconsultants.com</span>
             </div>
             <div className="flex items-start gap-3">
               <Phone size={18} className="text-blue-500 mt-1 shrink-0" />
@@ -55,7 +55,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
         <p className="text-white/20 text-sm italic">
-          © 2026 JPPP Consultants LLP. All rights reserved.
+          © 2026 JPPA Consultants LLP. All rights reserved.
         </p>
         <div className="flex gap-6 text-sm text-white/20">
           <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

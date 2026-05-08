@@ -22,7 +22,7 @@ export default function Navbar() {
           animate={{ opacity: 1, x: 0 }}
           className="text-2xl font-bold tracking-tighter text-white"
         >
-          JPPP <span className="text-blue-500">Consultants</span>
+          JPPA <span className="text-blue-500">Consultants LLP</span>
         </motion.div>
 
         {/* Desktop Nav */}
