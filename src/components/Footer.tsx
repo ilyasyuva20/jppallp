@@ -7,9 +7,8 @@ export default function Footer() {
     <footer id="contact" className="pt-20 pb-8 px-6 bg-[#0f2e60] text-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
         <div className="lg:col-span-2 space-y-6">
-          <div className="text-2xl font-bold tracking-tighter text-white flex items-center gap-2">
-            <span className="bg-white text-[#0f2e60] px-2 py-1 rounded-sm">JP</span>
-            P & ASSOCIATES LLP
+          <div className="text-2xl font-black tracking-tight text-white uppercase">
+            JPPA <span className="font-bold text-blue-400">Consultants LLP</span>
           </div>
           <p className="text-blue-100 leading-relaxed text-sm max-w-sm">
             Helping businesses with strategic financial management, accurate reporting and growth focused solutions.
@@ -33,8 +32,6 @@ export default function Footer() {
             <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
             <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
             <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
-            <li><a href="#industries" className="hover:text-white transition-colors">Industries</a></li>
-            <li><a href="#resources" className="hover:text-white transition-colors">Resources</a></li>
             <li><a href="#contact" className="hover:text-white transition-colors">Contact Us</a></li>
           </ul>
         </div>
@@ -60,7 +57,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-3">
               <Phone size={18} className="text-blue-400 shrink-0" />
-              <span>+91 98765 43210</span>
+              <span>+91 80865 04295, +91 70125 3454</span>
             </div>
             <div className="flex items-center gap-3">
               <Mail size={18} className="text-blue-400 shrink-0" />
@@ -73,18 +70,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div className="max-w-7xl mx-auto pt-8 border-t border-white/10 text-center">
         <p className="text-blue-200 text-sm">
-          © 2024 JP P & Associates LLP. All Rights Reserved.
+          © 2026 JPPA Consultants LLP. All Rights Reserved.
         </p>
-        <div className="flex gap-6 text-sm text-blue-200">
-          <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>
-          <a href="#" className="hover:text-white transition-colors">Refund Policy</a>
-        </div>
-      </div>
-      <div className="text-center mt-4 text-xs text-blue-300">
-        Designed with ❤️ for your business growth.
       </div>
     </footer>
   );

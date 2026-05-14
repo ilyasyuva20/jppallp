@@ -1,56 +1,56 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
-  Briefcase, 
-  Calculator, 
-  LayoutDashboard, 
-  Coins, 
-  LineChart, 
-  ClipboardCheck, 
-  PieChart, 
-  Target 
+import {
+  Briefcase,
+  Calculator,
+  LayoutDashboard,
+  Coins,
+  LineChart,
+  ClipboardCheck,
+  PieChart,
+  Target
 } from "lucide-react";
 
 const services = [
   {
     title: "Virtual CFO Services",
-    description: "Strategic financial planning, analysis and decision support.",
+    description: "Get expert financial guidance without hiring a full-time CFO.",
     icon: Briefcase,
   },
   {
     title: "Accounting Outsourcing",
-    description: "Bookkeeping, monthly accounting & financial statements.",
+    description: "We handle your books with care, accuracy and speed.",
     icon: Calculator,
   },
   {
     title: "MIS Reporting & Dashboards",
-    description: "Real-time MIS reports and custom dashboards for better insights.",
+    description: "Clean reports that help you make better business choices.",
     icon: LayoutDashboard,
   },
   {
     title: "Cash Flow Management",
-    description: "Optimize cash flow and improve liquidity for business stability.",
+    description: "Keep your cash flow steady and your business ready to grow.",
     icon: Coins,
   },
   {
     title: "Budgeting & Forecasting",
-    description: "Accurate budgeting and forecasting to achieve your business goals.",
+    description: "Plan ahead with simple budgets and clear future estimates.",
     icon: LineChart,
   },
   {
-    title: "Compliance Support",
-    description: "GST, TDS, ROC & other regulatory compliance support.",
+    title: "GST & Compliance Support",
+    description: "Stay on top of tax rules and filing deadlines.",
     icon: ClipboardCheck,
   },
   {
     title: "Financial Analysis",
-    description: "In-depth financial analysis to improve profitability and growth.",
+    description: "Understand your numbers and find ways to improve.",
     icon: PieChart,
   },
   {
-    title: "Growth & Digital Support",
-    description: "Business growth strategy, digital marketing & sales support.",
+    title: "ERP System Consulting",
+    description: "Improve your work with the right ERP setup and support.",
     icon: Target,
   }
 ];
@@ -68,7 +68,7 @@ export default function Services() {
           >
             Our Services
           </motion.h3>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

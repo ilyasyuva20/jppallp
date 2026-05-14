@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
-import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +11,6 @@ export default function Navbar() {
     { name: "Home", href: "#home" },
     { name: "About Us", href: "#about" },
     { name: "Services", href: "#services" },
-    { name: "Industries", href: "#industries" },
-    { name: "Resources", href: "#resources" },
     { name: "Contact Us", href: "#contact" },
   ];
 
@@ -25,7 +22,7 @@ export default function Navbar() {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone size={14} />
-              <span>+91 98765 43210</span>
+              <span>+91 80865 04295, +91 70125 3454</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail size={14} />
@@ -47,17 +44,16 @@ export default function Navbar() {
 
       {/* Main Navbar */}
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="flex flex-col"
         >
-          <div className="text-2xl font-bold tracking-tighter text-[#0f2e60] flex items-center gap-2">
-            <span className="bg-[#0f2e60] text-white px-2 py-1 rounded-sm">JP</span>
-            P & ASSOCIATES LLP
+          <div className="text-2xl font-black tracking-tight text-[#0f2e60] uppercase">
+            JPPA <span className="font-bold">Consultants LLP</span>
           </div>
           <div className="text-[10px] font-semibold text-gray-500 tracking-widest uppercase mt-0.5">
-            Virtual CFO & Accounting Services
+            Strategic Financial Leadership
           </div>
         </motion.div>
 
@@ -96,7 +92,7 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="lg:hidden bg-white border-t border-gray-100 p-6 flex flex-col gap-4 absolute w-full shadow-lg"
@@ -111,7 +107,7 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <button 
+          <button
             onClick={() => window.dispatchEvent(new Event("open-booking-modal"))}
             className="bg-[#0f2e60] text-white px-5 py-3 rounded-md text-center font-semibold mt-2"
           >

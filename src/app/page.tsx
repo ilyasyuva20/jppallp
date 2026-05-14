@@ -2,10 +2,8 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import DashboardPreview from "@/components/DashboardPreview";
-import Industries from "@/components/Industries";
+import HowWeWork from "@/components/HowWeWork";
 import About from "@/components/About";
-import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
@@ -17,14 +15,10 @@ export default function Home() {
       <Hero />
       <Services />
       <WhyChooseUs />
-      <DashboardPreview />
-      
-      <div className="grid md:grid-cols-2 gap-0 max-w-7xl mx-auto items-stretch">
-        <Industries />
-        <About />
-      </div>
+      <HowWeWork />
 
-      <Testimonials />
+      <About />
+
       <CTA />
       <Footer />
       <BookingModal />

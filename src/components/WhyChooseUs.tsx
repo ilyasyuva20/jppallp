@@ -6,32 +6,32 @@ import { Users, PiggyBank, LineChart, FileText, TrendingUp, ShieldCheck } from "
 const reasons = [
   {
     title: "Experienced CA Professionals",
-    description: "Expertise of qualified CA professionals with years of industry experience.",
+    description: "Our skilled Chartered Accountants help you handle financial matters with confidence.",
     icon: Users,
   },
   {
-    title: "Cost-Effective Solutions",
-    description: "High-quality CFO services at a fraction of the cost of in-house CFO.",
+    title: "Clear Financial Reports",
+    description: "Get accurate and on-time reports that show how your business is doing.",
     icon: PiggyBank,
   },
   {
-    title: "Real-Time Financial Insights",
-    description: "Timely and accurate reports to help you make better business decisions.",
+    title: "Real-Time Business Insights",
+    description: "See important financial data right away and make better decisions faster.",
     icon: LineChart,
   },
   {
-    title: "Monthly Business Reports",
-    description: "Detailed monthly MIS reports to track business performance.",
+    title: "Growth Planning",
+    description: "We create simple financial plans that help your business grow.",
     icon: FileText,
   },
   {
-    title: "Growth-Focused Approach",
-    description: "We don't just report numbers, we help you grow your business.",
+    title: "Affordable CFO Support",
+    description: "Get strong financial guidance without paying for a full-time executive.",
     icon: TrendingUp,
   },
   {
-    title: "Confidential & Reliable",
-    description: "Your data is 100% safe and handled with the highest confidentiality.",
+    title: "Private & Reliable Service",
+    description: "Your financial information stays private and is handled with care.",
     icon: ShieldCheck,
   }
 ];
@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
           >
             Why Choose Us
           </motion.h3>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
