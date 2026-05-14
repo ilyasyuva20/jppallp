@@ -1,38 +1,38 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0a0a0a;
-  --color-foreground: #ededed;
-  --color-accent: #3b82f6;
-  --color-glass: rgba(255, 255, 255, 0.05);
-  --color-glass-border: rgba(255, 255, 255, 0.1);
-  --color-navy-deep: #020617;
-  --color-navy-light: #1e293b;
+  --color-background: #f8fafc;
+  --color-foreground: #0f172a;
+  --color-primary: #0f2e60; /* Deep blue */
+  --color-secondary: #0056b3; /* Bright blue */
+  --color-accent: #2563eb;
+  --color-glass: rgba(255, 255, 255, 0.9);
+  --color-glass-border: rgba(226, 232, 240, 0.8);
 }
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #f8fafc;
+  --foreground: #0f172a;
 }
 
 @layer base {
   body {
-    @apply bg-background text-foreground antialiased selection:bg-accent/30;
+    @apply bg-background text-foreground antialiased selection:bg-accent/20;
     overflow-x: hidden;
   }
 }
 
 @layer utilities {
   .glass {
-    @apply bg-glass backdrop-blur-lg border border-glass-border shadow-2xl;
+    @apply bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm;
   }
   
   .glass-hover {
-    @apply hover:bg-white/10 transition-all duration-300;
+    @apply hover:bg-slate-50 transition-all duration-300 shadow-md;
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-white/80 to-white/50;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
   }
 
   .floating {
@@ -41,7 +41,7 @@
 
   @keyframes floating {
     0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
   }
 }

@@ -36,75 +36,75 @@ export default function BookingModal() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setIsOpen(false)}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 bg-[#0f2e60]/70 backdrop-blur-md z-[100] flex items-center justify-center p-4"
           >
             {/* Modal */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
               onClick={(e) => e.stopPropagation()}
-              className="w-full max-w-md glass relative overflow-hidden rounded-3xl"
+              className="w-full max-w-lg bg-white relative overflow-hidden rounded-[40px] shadow-2xl"
             >
-              {/* Decorative shapes */}
-              <div className="absolute -top-20 -right-20 w-40 h-40 bg-blue-600 rounded-full blur-[60px] opacity-20 pointer-events-none" />
-              <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-purple-600 rounded-full blur-[60px] opacity-20 pointer-events-none" />
-              
-              <div className="p-8 relative z-10">
+              <div className="p-10 md:p-12 relative z-10">
                 <button 
                   onClick={() => setIsOpen(false)}
-                  className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors"
+                  className="absolute top-8 right-8 text-slate-400 hover:text-slate-600 transition-colors bg-slate-100 p-1.5 rounded-full z-20"
                 >
-                  <X size={24} />
+                  <X size={20} />
                 </button>
                 
-                <h2 className="text-3xl font-bold text-white mb-8 text-center">
+                <h2 className="text-xl md:text-2xl font-bold text-[#0f2e60] mb-10 pr-12 leading-tight whitespace-nowrap">
                   Book Your Appointment
                 </h2>
                 
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label className="block text-white/80 font-medium mb-2 text-sm">Your name</label>
+                    <label className="block text-slate-600 font-semibold mb-2.5 text-sm ml-1">Your name</label>
                     <input 
                       type="text" 
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
+                      placeholder="Enter your full name"
+                      className="w-full bg-slate-50 border border-slate-200 rounded-2xl px-5 py-4 text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all shadow-sm"
                     />
                   </div>
                   
                   <div>
-                    <label className="block text-white/80 font-medium mb-2 text-sm">*Your email</label>
+                    <label className="block text-slate-600 font-semibold mb-2.5 text-sm ml-1">*Your email</label>
                     <input 
                       type="email" 
                       required
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
+                      placeholder="example@email.com"
+                      className="w-full bg-slate-50 border border-slate-200 rounded-2xl px-5 py-4 text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all shadow-sm"
                     />
                   </div>
                   
                   <div>
-                    <label className="block text-white/80 font-medium mb-2 text-sm">*Your Phone</label>
+                    <label className="block text-slate-600 font-semibold mb-2.5 text-sm ml-1">*Your Phone</label>
                     <input 
                       type="tel" 
                       required
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
+                      placeholder="+91 XXXXX XXXXX"
+                      className="w-full bg-slate-50 border border-slate-200 rounded-2xl px-5 py-4 text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all shadow-sm"
                     />
                   </div>
                   
                   <div>
-                    <label className="block text-white/80 font-medium mb-2 text-sm">*Company Name</label>
+                    <label className="block text-slate-600 font-semibold mb-2.5 text-sm ml-1">*Company Name</label>
                     <input 
                       type="text" 
                       required
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
+                      placeholder="Your organization name"
+                      className="w-full bg-slate-50 border border-slate-200 rounded-2xl px-5 py-4 text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all shadow-sm"
                     />
                   </div>
                   
                   <button 
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-[#1da1f2] text-white font-bold rounded-xl px-4 py-4 mt-4 hover:bg-[#1da1f2]/90 transition-colors shadow-[0_0_20px_rgba(29,161,242,0.3)] disabled:opacity-70 flex items-center justify-center gap-2"
+                    className="w-full bg-[#2563eb] text-white font-bold rounded-2xl px-6 py-5 mt-4 hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/30 disabled:opacity-70 flex items-center justify-center gap-2 text-lg"
                   >
                     {isSubmitting ? (
-                      <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                      <span className="w-6 h-6 border-3 border-white/30 border-t-white rounded-full animate-spin" />
                     ) : (
                       "Request A Call Back"
                     )}

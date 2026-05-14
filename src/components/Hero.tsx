@@ -1,91 +1,102 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronRight } from "lucide-react";
-
-const FloatingShape = ({ className, delay = 0, duration = 6 }: { className: string, delay?: number, duration?: number }) => (
-  <motion.div
-    initial={{ y: 0 }}
-    animate={{ 
-      y: [-20, 20, -20],
-      rotate: [0, 10, -10, 0],
-    }}
-    transition={{ 
-      duration, 
-      repeat: Infinity, 
-      ease: "easeInOut",
-      delay 
-    }}
-    className={`absolute rounded-3xl blur-3xl opacity-20 ${className}`}
-  />
-);
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden px-6">
-      {/* 3D Floating Background Elements */}
-      <div className="absolute inset-0 z-0">
-        <FloatingShape className="w-64 h-64 bg-blue-600 top-1/4 -left-32" delay={0} />
-        <FloatingShape className="w-96 h-96 bg-purple-600 bottom-1/4 -right-48" delay={1} duration={8} />
-        <FloatingShape className="w-48 h-48 bg-cyan-400 top-2/3 left-1/4" delay={2} duration={7} />
-      </div>
+    <section id="home" className="relative pt-20 pb-32 lg:pt-32 lg:pb-48 overflow-hidden px-6 bg-[#0f2e60] min-h-[90vh] flex flex-col justify-center">
+      {/* High-Quality Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none"
+        style={{ backgroundImage: "url('/hero-banner.png')" }}
+      />
+      
+      {/* Professional Overlays for Legibility */}
+      <div className="absolute inset-0 bg-[#0f2e60]/80 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0f2e60] via-[#0f2e60]/70 to-transparent pointer-events-none" />
 
-      <div className="relative z-10 max-w-5xl mx-auto text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 text-sm font-medium text-blue-400"
-        >
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-          </span>
-          Next-Gen Financial Consulting
-        </motion.div>
-
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1]"
-        >
-          Strategic Financial Leadership for <span className="text-blue-500">Sustainable Growth.</span>
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-xl text-white/60 mb-10 max-w-2xl mx-auto"
-        >
-          Empowering businesses through comprehensive financial and operational excellence. 
-          Your strategic virtual CFO and business consulting partner.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
-          <button 
-            onClick={() => window.dispatchEvent(new Event("open-booking-modal"))}
-            className="w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-blue-500 transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] flex items-center justify-center gap-2 group"
+      <div className="relative z-10 max-w-7xl mx-auto w-full pt-12 md:pt-20">
+        <div className="max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-400/10 border border-blue-400/20 text-blue-300 font-semibold mb-6 tracking-wide text-xs md:text-sm uppercase backdrop-blur-sm"
           >
-            Book Free Consultation
-            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-          </button>
-          <button className="w-full sm:w-auto glass px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-2">
-            View Sample Dashboard
-            <ChevronRight size={20} />
-          </button>
-        </motion.div>
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            </span>
+            Professional Virtual CFO Services
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-[1.2] max-w-2xl md:max-w-3xl"
+          >
+            Strategic Financial Partner for Your <span className="text-blue-400">Business Growth</span>
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-base md:text-lg text-slate-200 mb-10 max-w-xl md:max-w-2xl leading-relaxed"
+          >
+            We provide end-to-end Virtual CFO, Accounting, MIS, and Compliance solutions to help you improve profitability, manage cash flow and make smarter financial decisions.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-col sm:flex-row items-center gap-4"
+          >
+            <button 
+              onClick={() => window.dispatchEvent(new Event("open-booking-modal"))}
+              className="w-full sm:w-auto bg-[#2563eb] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-600 transition-all flex items-center justify-center gap-2 group shadow-xl hover:shadow-blue-500/30"
+            >
+              Book Free Consultation
+            </button>
+            <button className="w-full sm:w-auto border-2 border-slate-400/40 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 hover:border-white transition-all flex items-center justify-center gap-2 group backdrop-blur-sm">
+              Explore Services
+              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+            </button>
+          </motion.div>
+        </div>
       </div>
 
-      {/* Decorative Grid */}
-      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-[#0a0a0a] to-transparent pointer-events-none" />
+      {/* Stats Banner at the bottom */}
+      <motion.div 
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
+        className="absolute bottom-0 left-0 right-0 border-t border-white/10 bg-[#0f2e60]/90 backdrop-blur-xl z-20"
+      >
+        <div className="max-w-7xl mx-auto px-6 py-6 md:py-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 divide-x-0 md:divide-x divide-white/10">
+            <div className="flex flex-col items-center justify-center text-center">
+              <div className="text-3xl md:text-4xl font-bold text-white mb-1">10+</div>
+              <div className="text-[10px] md:text-xs font-semibold text-blue-200/70 uppercase tracking-widest">Years Experience</div>
+            </div>
+            <div className="flex flex-col items-center justify-center text-center">
+              <div className="text-3xl md:text-4xl font-bold text-white mb-1">200+</div>
+              <div className="text-[10px] md:text-xs font-semibold text-blue-200/70 uppercase tracking-widest">Happy Clients</div>
+            </div>
+            <div className="flex flex-col items-center justify-center text-center">
+              <div className="text-3xl md:text-4xl font-bold text-white mb-1">500+</div>
+              <div className="text-[10px] md:text-xs font-semibold text-blue-200/70 uppercase tracking-widest">Projects Done</div>
+            </div>
+            <div className="flex flex-col items-center justify-center text-center">
+              <div className="text-3xl md:text-4xl font-bold text-white mb-1">100%</div>
+              <div className="text-[10px] md:text-xs font-semibold text-blue-200/70 uppercase tracking-widest">Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 }
