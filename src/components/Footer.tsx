@@ -53,15 +53,18 @@ export default function Footer() {
           <div className="space-y-4 text-blue-100 text-sm">
             <div className="flex items-start gap-3">
               <MapPin size={18} className="text-blue-400 shrink-0" />
-              <span>Surat, Gujarat, India</span>
+              <span>172 A, Nazarath Nagar,Pravur,Ernakulam-683572</span>
             </div>
-            <div className="flex items-center gap-3">
-              <Phone size={18} className="text-blue-400 shrink-0" />
-              <span>+91 80865 04295, +91 70125 3454</span>
+            <div className="flex items-start gap-3">
+              <Phone size={18} className="text-blue-400 shrink-0 mt-0.5" />
+              <div className="flex flex-col">
+                <span>+91 98473 13695</span>
+                <span>+91 98957 71106</span>
+              </div>
             </div>
             <div className="flex items-center gap-3">
               <Mail size={18} className="text-blue-400 shrink-0" />
-              <span>info@jppallp.com</span>
+              <span>jppaconsultants@gmail.com</span>
             </div>
             <div className="pt-2">
               <p className="flex items-center gap-2"><span className="text-blue-400">🕒</span> Mon - Sat : 9:00 AM - 6:00 PM</p>
@@ -75,6 +78,6 @@ export default function Footer() {
           © 2026 JPPA Consultants LLP. All Rights Reserved.
         </p>
       </div>
-    </footer>
+    </footer >
   );
 }

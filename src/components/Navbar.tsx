@@ -22,15 +22,15 @@ export default function Navbar() {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone size={14} />
-              <span>+91 80865 04295, +91 70125 3454</span>
+              <span>+91 98473 13695, +91 98957 71106</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail size={14} />
-              <span>info@jppallp.com</span>
+              <span>jppaconsultants@gmail.com</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin size={14} />
-              <span>Surat, Gujarat, India</span>
+              <span>172 A, Nazarath Nagar,Pravur,Ernakulam-683572</span>
             </div>
           </div>
           <div className="flex items-center gap-4">
