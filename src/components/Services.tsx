@@ -49,8 +49,8 @@ const services = [
     icon: PieChart,
   },
   {
-    title: "ERP System Consulting",
-    description: "Improve your work with the right ERP setup and support.",
+    title: "Business Registrations",
+    description: "Assistance with company registrations, licenses, and business setup services.",
     icon: Target,
   }
 ];
