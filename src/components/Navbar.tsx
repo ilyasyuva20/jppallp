@@ -30,8 +30,8 @@ export default function Navbar() {
             </div>
             <div className="flex items-center gap-1.5 min-w-0">
               <MapPin size={14} className="shrink-0" />
-              <span className="truncate" title="172 A, NAZARETH NAGAR, Angamally, Angamaly Police Station, Paravur, Ernakulam- 683572. Kerala, India.">
-                172 A, NAZARETH NAGAR, Angamally, Angamaly Police Station, Paravur, Ernakulam- 683572. Kerala, India.
+              <span className="truncate" title="172 A, NAZARETH NAGAR, Angamally, Ernakulam- 683572. Kerala, India.">
+                172 A, NAZARETH NAGAR, Angamally, Ernakulam- 683572. Kerala, India.
               </span>
             </div>
           </div>
