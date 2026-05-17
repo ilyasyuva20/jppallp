@@ -53,7 +53,7 @@ export default function Footer() {
           <div className="space-y-4 text-blue-100 text-sm">
             <div className="flex items-start gap-3">
               <MapPin size={18} className="text-blue-400 shrink-0" />
-              <span>172 A, NAZARETH NAGAR, Angamally, Ernakulam- 683572. Kerala, India.</span>
+              <span>172 A, Nazarath Nagar, Angamally, Ernakulam- 683572. Kerala, India.</span>
             </div>
             <div className="flex items-start gap-3">
               <Phone size={18} className="text-blue-400 shrink-0 mt-0.5" />
