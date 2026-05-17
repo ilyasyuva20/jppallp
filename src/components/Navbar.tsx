@@ -17,27 +17,29 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       {/* Top Bar */}
-      <div className="bg-[#0f2e60] text-white/90 text-sm py-2 px-6 hidden md:block">
+      <div className="bg-[#0f2e60] text-white/90 text-xs py-2 px-4 xl:px-6 hidden lg:block">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-6">
-            <div className="flex items-center gap-2">
-              <Phone size={14} />
+          <div className="flex items-center gap-4 xl:gap-6 min-w-0">
+            <div className="flex items-center gap-1.5 whitespace-nowrap shrink-0">
+              <Phone size={14} className="shrink-0" />
               <span>+91 98473 13695, +91 98957 71106</span>
             </div>
-            <div className="flex items-center gap-2">
-              <Mail size={14} />
+            <div className="flex items-center gap-1.5 whitespace-nowrap shrink-0">
+              <Mail size={14} className="shrink-0" />
               <span>jppaconsultants@gmail.com</span>
             </div>
-            <div className="flex items-center gap-2">
-              <MapPin size={14} />
-              <span>172 A, Nazarath Nagar,Pravur,Ernakulam-683572</span>
+            <div className="flex items-center gap-1.5 min-w-0">
+              <MapPin size={14} className="shrink-0" />
+              <span className="truncate" title="172 A, NAZARETH NAGAR, Angamally, Angamaly Police Station, Paravur, Ernakulam- 683572. Kerala, India.">
+                172 A, NAZARETH NAGAR, Angamally, Angamaly Police Station, Paravur, Ernakulam- 683572. Kerala, India.
+              </span>
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <span className="text-white/70">Follow Us:</span>
-            <a href="#" className="hover:text-white transition-colors text-xs font-bold">In</a>
-            <a href="#" className="hover:text-white transition-colors text-xs font-bold">Fb</a>
-            <a href="#" className="hover:text-white transition-colors text-xs font-bold">Ig</a>
+          <div className="flex items-center gap-3 shrink-0 ml-4">
+            <span className="text-white/70 whitespace-nowrap">Follow Us:</span>
+            <a href="#" className="hover:text-white transition-colors text-xs font-bold shrink-0">In</a>
+            <a href="#" className="hover:text-white transition-colors text-xs font-bold shrink-0">Fb</a>
+            <a href="#" className="hover:text-white transition-colors text-xs font-bold shrink-0">Ig</a>
           </div>
         </div>
       </div>
