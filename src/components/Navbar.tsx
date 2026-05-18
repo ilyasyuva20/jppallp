@@ -22,7 +22,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4 xl:gap-6 min-w-0">
             <div className="flex items-center gap-1.5 whitespace-nowrap shrink-0">
               <Phone size={14} className="shrink-0" />
-              <span>+91 98473 13695, +91 98957 71106</span>
+              <span>+91 90374 70396, +91 98957 71106</span>
             </div>
             <div className="flex items-center gap-1.5 whitespace-nowrap shrink-0">
               <Mail size={14} className="shrink-0" />
